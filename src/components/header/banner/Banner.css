@@ -1,0 +1,158 @@
+.banner_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner_wrapper {
+    position: absolute;
+    top: 43%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.banner_header{
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1c341c), color-stop(100%, #334633));
+    padding: 10px 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner{
+    position: relative;
+}
+
+.banner_img-img{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.banner_header_title {
+    color: #bee6c3;
+    background-color: #212722;
+    border-radius: 50%;
+    box-shadow: 0px 1px 0 0 #1f1f1f, inset 1px 1px 1px #606661;
+    text-align: center;
+    line-height: 20px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.banner_header_title span{
+    font-size: 10px;
+}
+
+.banner_header_input input {
+    border-color: #7c817e;
+    background: #2e332f;
+    box-shadow: 1px 1px 1px #1f1f1f, inset 1px 1px 1px #606661;
+        max-width: 430px;
+    width: 100%;
+    height: 35px;
+    border: 1px solid #a0b771;
+    border-radius: 10px;
+    padding: 0 25px;
+    color: white;
+}
+
+.banner_header_button{
+    border-color: #4e5b33;
+    box-shadow: 1px 1px 1px #1f1f1f, inset 1px 1px 1px #536038;
+    background: linear-gradient(to bottom, #3d4629 0%, #272b1e 100%);
+    color: #b0c0b2;
+    width: 94px;
+    height: 30px;
+    border: 1px solid #8ea65c;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.banner_header_links{
+    display: flex;
+}
+
+.banner_header_links a {
+    background-color: #212722;
+    border-radius: 50%;
+    box-shadow: 1px 1px 0 0 #1f1f1f, inset 1px 1px 1px #606661;
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.banner_header_links img{
+    object-fit: cover;
+    width: auto;
+    height: auto;
+}
+
+.banner_category {
+    background-color: #1f1f1f;
+    border-left: 3px solid #3c4c40;
+    border-right: 3px solid #3c4c40;
+    padding: 20px;
+    margin: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.banner_category_anime {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.anime_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.anime_block {
+    display: flex;
+    flex-direction: column;
+    background: #492e32;
+    align-items: center;
+    border-radius: 95px 95px 0px 0px;
+}
+
+.anime_block img{
+    border-radius: 50%;
+    height: 186px;
+    width: 186px;
+    object-fit: cover;
+    justify-content: center;
+}
+
+.banner_category_category{
+    background: #363a37;
+    box-shadow: 2px 2px 3px #535f53, inset 1px 1px 1px #535f53;
+    border-radius: 10px;
+    padding: 10px 10px;
+    text-align: center;
+    margin: 0 0 25px;
+}
+
+.anime_block a{
+    color: #d9d9d9;
+    font-size: 1.3em;
+    text-align: center;
+    text-decoration: none;
+    margin: 20px 0px;
+    width: 190px;
+}

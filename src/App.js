@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/header/header/Header"
+import Banner from "./components/header/banner/Banner";
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import Catalog from "./animePages/catalog/Catalog";
+import Main from "./animePages/main/Main";
+import NotFound from "./animePages/NotFound/NotFound";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter className="App">
+      <Header/>
+      <Banner/>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/catalog" element={<Catalog />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
