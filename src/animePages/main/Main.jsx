@@ -1,11 +1,12 @@
-import "./Main.css"
+import Banner from '../../components/header/banner/Banner'
+import './Main.css'
 
 const Main = () => {
-    return(
-        <div>
-            Main
-        </div>
-    )
+	return (
+		<div>
+			<Banner />
+		</div>
+	)
 }
 
 export default Main
