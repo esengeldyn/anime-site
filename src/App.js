@@ -13,9 +13,10 @@ function App() {
 			<Routes>
 				<Route path='/' element={<Main />} />
 				<Route path='/catalog' element={<Catalog />} />
-				<Route path='/:id' element={<Details />} />
+				<Route path='/anime/:id' element={<Details />} />
 				<Route path='*' element={<NotFound />} />
 			</Routes>
+			
 		</BrowserRouter>
 	)
 }
