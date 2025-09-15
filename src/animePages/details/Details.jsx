@@ -1,7 +1,7 @@
 import { links } from '../../data.js'
 import { Link } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
-import "./Details.css"
+import './Details.css'
 
 const Details = () => {
 	const params = useParams()
@@ -10,7 +10,11 @@ const Details = () => {
 
 	return (
 		<div className='banner'>
-			<img className='banner_img' src='https://gen.jut.su/chakranature/background/main/main.dark.jpg'alt=''/>
+			<img
+				className='banner_img'
+				src='https://gen.jut.su/chakranature/background/main/main.dark.jpg'
+				alt=''
+			/>
 			<div className='banner_wrapper'>
 				<div className='container'>
 					<div className='banner_img-img'>
@@ -54,14 +58,30 @@ const Details = () => {
 							<div className='banner_category_block'>
 								<div className='banner_anime-item'>
 									<img src={foundAnime.img} alt='' />
-									<h1 className='banner_anime-title'>Смотреть {foundAnime.name}</h1>
+									<h1 className='banner_anime-title'>
+										Смотреть {foundAnime.name}
+									</h1>
 								</div>
 								<div className='banner_category_series'>
 									{foundAnime.series.map(item => (
 										<div className='banner_category_series_item'>
-											<a href="https://jut.su/juuni-taisen/episode-1.html" target="_blank">{item.id} серия</a>
+											<a
+												href='https://jut.su/juuni-taisen/episode-1.html'
+												rel='noreferrer'
+												target='_blank'
+											>
+												{item.id} серия
+											</a>
 										</div>
 									))}
+								</div>
+								<div>
+									<div>
+										{foundAnime.genres.map(item => (
+											<p>{item}</p>
+										))}
+									</div>
+									<div></div>
 								</div>
 							</div>
 							<div className='banner_category_category'>
