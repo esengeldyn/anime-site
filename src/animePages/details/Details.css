@@ -221,9 +221,57 @@
 .banner_category_series{
     display: flex;
     gap: 5px;
+    margin-bottom: 30px;
 }
 
 .banner_category_series_item a{
     color: #1f1f1f;
     text-decoration: none;
+}
+
+.banner_category_info{
+    background: #363a37;
+    border-radius: 10px 10px 0px 0px;
+    padding: 15px 15px;
+    border-bottom: 1px solid #9aa777;
+}
+
+.banner_category_info-info{
+    background: #363a37;
+    border-radius: 0px 0px 10px 10px;
+    padding: 15px 15px;
+}
+
+.banner_category_info-info p{
+    color: #cdcdd3;
+    font-weight: 500
+}
+
+.banner_category_info-genre{
+    display: flex;
+}
+
+.banner_category_info-genre p{
+    margin-right: 7px;
+}
+
+.genre_item{
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.genre_item p:nth-child(1){
+    color: #cdcdd3;
+    margin: 0;
+}
+
+.genre_item p:nth-child(2){
+    color: #cdcdd3;
+    margin: 0;
+}
+
+.genre_title{
+    color: #bee6c3;
+    margin: 0;
 }

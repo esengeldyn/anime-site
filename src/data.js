@@ -5,7 +5,7 @@ export const links = [
 		originalName: 'Karaoke Iko!',
 		link: 'https://jut.su/karaoke-iko/',
 		img: 'https://gen.jut.su/uploads/animethumbs/anime_karaoke-iko.jpg',
-		genres: ['Комедия', 'Повседневность', 'Школа'],
+		genres: ['Комедия,', 'повседневность,', 'и школа.'],
 		themes: ['Музыка', 'Дружба', 'Школьная жизнь'],
 		year: 2024,
 		ageRating: '12+',

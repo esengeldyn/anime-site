@@ -75,13 +75,44 @@ const Details = () => {
 										</div>
 									))}
 								</div>
-								<div>
-									<div>
-										{foundAnime.genres.map(item => (
-											<p>{item}</p>
-										))}
+								<div className='banner_category_info'>
+									<div className='banner_category_info-genre'>							
+										<div className='genre_item'>
+											<p>Жанры: </p>
+											{foundAnime.genres.map(item => (
+												<p className='genre_title'>{item}</p>
+											))}
+										</div>
 									</div>
-									<div></div>
+									<div className='banner_category_info-genre'>							
+										<div className='genre_item'>
+											<p>Темы: </p>
+											{foundAnime.themes.map(item => (
+												<p className='genre_title'>{item}</p>
+											))}
+										</div>
+									</div>
+									<div className='banner_category_info-genre'>							
+										<div className='genre_item'>
+											<p>Год выпуска: </p>
+											<p>{foundAnime.year}</p>
+										</div>
+									</div>
+									<div className='banner_category_info-genre'>							
+										<div className='genre_item'>
+											<p>Оригинальное название:</p>
+											<p>{foundAnime.originalName}</p>
+										</div>
+									</div>
+									<div className='banner_category_info-genre'>							
+										<div className='genre_item'>
+											<p>Возрастной рейтинг:</p>
+											<p>{foundAnime.ageRating}</p>
+										</div>
+									</div>
+								</div>
+								<div className='banner_category_info-info'>
+									<p>{foundAnime.plot}</p>
 								</div>
 							</div>
 							<div className='banner_category_category'>
